@@ -1,0 +1,112 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+img{
+    margin: 0 2rem;
+    width: 8rem;
+    height: 7rem;
+    fill: blue;
+}
+
+ul, li{
+    font-size: 3rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-items: space-evenly;
+    gap: 2rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+
+.B-tabs{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.B-tabs button{
+    font-size: 1.8rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 0.15rem;
+}
+
+.feat{
+    position: relative;
+}
+
+.featB{
+    position: absolute;
+    top: 14%;
+    left: 9%;
+    width: fit-content;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    transition: 0.3ms down ease;
+}
+
+.Comp{
+    position: relative;
+}
+.compB{
+    position: absolute;
+    top: 14%;
+    left: 20%;
+    width: fit-content;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    transition: 0.3ms down ease;
+}
+.bar{
+    display: none;
+}
+
+@media (max-width: 735px){
+    .wrapper{
+        position: relative;
+    }
+
+
+    .tabs, .B-tabs{
+        display: none;
+    }
+
+    .top img{
+        position: absolute;
+        top: 0.1rem;
+        left: 0.5rem;
+
+    }
+    .bar{
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        right: 0rem;
+        align-items: center;
+
+    }
+
+}
