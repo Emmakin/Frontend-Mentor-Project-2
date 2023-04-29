@@ -9,8 +9,7 @@
 .top{
     display: flex;
     align-items: center;
-    width: 100%;
-
+    width: 80%;
 }
 
 img{
@@ -21,12 +20,13 @@ img{
 }
 
 ul, li{
+    padding: 0 0.2rem;
     font-size: 3rem;
     width: 100%;
     list-style: none;
     display: flex;
     justify-items: space-evenly;
-    gap: 2rem;
+    gap: space-evenly;
 }
 
 li {
@@ -70,8 +70,8 @@ li {
 }
 .compB{
     position: absolute;
-    top: 14%;
-    left: 20%;
+    top: 14vh;
+    left: 35vw;
     width: fit-content;
     background-color: hsl(0, 0%, 98%);
     display: flex;
@@ -89,9 +89,21 @@ li {
         position: relative;
     }
 
-
-    .tabs, .B-tabs{
+    .tabs ul{
         display: none;
+        position: relative;
+        top: 10rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+   .B-tabs{
+        position: absolute;
+        top: 20rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .top img{
@@ -101,11 +113,21 @@ li {
 
     }
     .bar{
+        z-index: 5;
         display: flex;
         width: 3rem;
         height: 3rem;
         right: 0rem;
         align-items: center;
+    }
+    .resBar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: blue;
+        width: 60%;
+        height: 70rem;
+
 
     }
 

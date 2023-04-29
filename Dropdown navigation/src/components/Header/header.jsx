@@ -2,10 +2,12 @@ import {React, useState} from 'react'
 import './header.css'
 import Logo from "../icons/snap-on-2-logo-svgrepo-com.svg"
 import Bar from "../icons/three-bars-svgrepo-com.svg"
+import Close from "../icons/close-svgrepo-com.svg"
 
 function Header() {
   const [feature, setFeature] = useState(false);
   const [company, setCompany] = useState(false);
+  const [response, setResponse] = useState(false);
 
   return (
     <div className='wrapper'>
@@ -39,7 +41,17 @@ function Header() {
           <label>Login</label>
           <button>Register</button>
         </div>
-        <img className="bar" src={Bar} alt="Bar" />
+        <img 
+          className="bar" 
+          src={response ? Close : Bar } 
+          alt="Bar" 
+          onClick={()=>{setResponse(!response)}}
+          
+        />
+        {response &&
+        <div className='resBar'>
+              
+        </div>}
     </div>
   )
 }
