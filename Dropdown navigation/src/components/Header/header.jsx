@@ -1,8 +1,14 @@
 import {React, useState} from 'react'
 import './header.css'
-import Logo from "../icons/snap-on-2-logo-svgrepo-com.svg"
-import Bar from "../icons/three-bars-svgrepo-com.svg"
-import Close from "../icons/close-svgrepo-com.svg"
+import Logo from "../images/logo.svg"
+import Bar from "../images/icon-menu.svg"
+import Close from "../images/icon-close-menu.svg"
+import Todo from "../images/icon-todo.svg"
+import Calendar from "../images/icon-calendar.svg"
+import Reminder from "../images/icon-reminders.svg"
+import Planning from "../images/icon-planning.svg"
+import UpArrow from "../images/icon-arrow-up.svg"
+import DownArrow from "../images/icon-arrow-down.svg"
 
 function Header() {
   const [feature, setFeature] = useState(false);
@@ -17,16 +23,24 @@ function Header() {
         <div className="tabs">
           <ul className={response ? "t" : "T-tabs"}>
             <li  id= "feat" className="feat" onClick={()=> {setFeature(!feature);}}
-            >Features</li>
+            >Features 
+            <img className="icons"
+            src={feature ? UpArrow : DownArrow} 
+            alt='a drop down arrow'/>
+            </li>
             {feature && 
             <ul className="featB">
-              <li>Todo List</li>
-              <li>Calander</li>
-              <li>Reminder</li>
-              <li>Planning</li>
+              <li> <img src={Todo} alt='Logo'/>Todo List</li>
+              <li> <img src={Calendar} alt='Calender'/>Calander</li>
+              <li> <img src={Reminder} alt='Reminders'/>Reminder</li>
+              <li> <img src={Planning} alt='Planning'/>Planning</li>
             </ul>}
             <li className="Comp" onClick={()=> {setCompany(!company);}}
-            >Company</li>
+            >Company 
+            <img className="icons"
+            src={company ? UpArrow : DownArrow}>
+            </img>
+            </li>
             {company && 
               <ul className="compB">
                 <li>History</li>
@@ -37,12 +51,12 @@ function Header() {
             <li>About</li>
           </ul>
         </div>
+      </div>
         <div className={response ? "B" : "B-tabs"}>
 
           <label>Login</label>
           <button>Register</button>
         </div>
-      </div>
         <img 
           className="bar" 
           src={response ? Close : Bar } 

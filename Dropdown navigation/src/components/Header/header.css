@@ -1,91 +1,116 @@
 .wrapper {
     width: 100%;
     display: flex;
-    font-size: 3rem;
+    font-size: 1.5rem;
     align-items: center;
     padding: 1rem;
 }
 
 .top{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 1%;
     width: 80%;
 }
 
 img{
-    margin: 0 2rem;
-    width: 8rem;
-    height: 7rem;
-    fill: blue;
+   display: flex;
+   left: 0;
 }
 
 .T-tabs, li{
     padding: 0 0.2rem;
-    font-size: 3rem;
+    font-size: 18px;
     width: 100%;
     list-style: none;
     display: flex;
-    justify-items: space-evenly;
-    gap: space-evenly;
 }
 
 li {
-    font-size: 2rem;
+    margin-left: 1rem;
+    justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 
 .B-tabs{
     padding-right: 1rem;
     margin-left: 5%;
-    font-size: 2rem;
     display: flex;
     gap: 2rem;
 }
 
 .B-tabs button{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     background-color: white;
     border-radius: 0.3rem;
-    padding: 0.15rem;
+    padding: 0.2rem;
 }
 
-.feat{
+.feat {
     position: relative;
+    cursor: pointer;
 }
+
 
 .featB{
-    position: absolute;
-    top: 14%;
-    left: 9%;
+    position: fixed;
+    top: 10%;
+    left: 5%;
     width: fit-content;
     background-color: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.3rem;
-    transition: 0.3ms down ease;
+    transition: 0.3ms bottom;
+}
+.icons{
+    display: flex;
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+
 }
 
 .Comp{
     position: relative;
+    cursor: pointer;
 }
 .compB{
-    position: absolute;
-    top: 14vh;
-    left: 35vw;
+    position: fixed;
+    top: 10%;
+    left: 20%;
     width: fit-content;
     background-color: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.3rem;
-    transition: 0.3ms down ease;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94) 0s;
+    overflow: hidden;
+
 }
+
+.featB li, .compB li{
+    margin: 0rem;
+    display: flex;
+    justify-content: left;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    gap: 0.2rem;
+}
+
+li img{
+    height: 1rem;
+    padding: 0 0.8rem 0 0;
+}
+
 .bar{
     display: none;
 }
 
-@media (max-width: 735px){
+@media (max-width: 375px){
     .wrapper{
         position: relative;
         
@@ -95,8 +120,16 @@ li {
         display: flex;
         flex-direction: column;
         
+        
     }
-
+    .top img{
+        margin: 1rem 0 0 0.5rem;
+        position: absolute;
+        top: 0.1rem;
+        left: 0.5rem;
+    
+    }
+    
     .B-tabs, .T-tabs{
         display: none;
     }
@@ -108,6 +141,10 @@ li {
         flex-direction: column;
         top: 4rem;
         left: 10rem;
+    }
+
+    .t li, .B li{
+        justify-content: left;
     }
 
     .B{
@@ -124,18 +161,10 @@ li {
        
     }
 
-    .top img{
-        position: absolute;
-        top: 0.1rem;
-        left: 0.5rem;
-
-    }
     .bar{
         display: pointer;
         z-index: 5;
         display: flex;
-        width: 3rem;
-        height: 3rem;
         right: 0rem;
         align-items: center;
     }
@@ -145,12 +174,13 @@ li {
 
     }
     .resBar{
-        position: absolute;
+        transition:linear;
+        position: fixed;
         top: 0;
         right: 0;
-        background: blue;
-        width: 60%;
-        height: 70rem;
+        background: ;
+        width: 100%;
+        height: 80%;
 
 
     }
