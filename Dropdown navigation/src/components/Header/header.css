@@ -19,7 +19,7 @@ img{
     fill: blue;
 }
 
-ul, li{
+.T-tabs, li{
     padding: 0 0.2rem;
     font-size: 3rem;
     width: 100%;
@@ -35,9 +35,10 @@ li {
 
 
 .B-tabs{
+    padding-right: 1rem;
+    margin-left: 5%;
     font-size: 2rem;
     display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -87,23 +88,40 @@ li {
 @media (max-width: 735px){
     .wrapper{
         position: relative;
+        
+    }
+   
+    .top{
+        display: flex;
+        flex-direction: column;
+        
     }
 
-    .tabs ul{
+    .B-tabs, .T-tabs{
         display: none;
-        position: relative;
-        top: 10rem;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-
     }
 
-   .B-tabs{
+    .t{
+        z-index: 2;
         position: absolute;
-        top: 20rem;
         display: flex;
         flex-direction: column;
+        top: 4rem;
+        left: 10rem;
+    }
+
+    .B{
+        z-index: 2;
+        margin-top: 2rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 13rem;
+        left: 10rem;
+    }
+
+    .active{
+       
     }
 
     .top img{
@@ -113,12 +131,18 @@ li {
 
     }
     .bar{
+        display: pointer;
         z-index: 5;
         display: flex;
         width: 3rem;
         height: 3rem;
         right: 0rem;
         align-items: center;
+    }
+
+    .transition{
+        transition: 0.9ms ease;
+
     }
     .resBar{
         position: absolute;

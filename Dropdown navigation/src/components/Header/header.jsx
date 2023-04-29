@@ -9,13 +9,14 @@ function Header() {
   const [company, setCompany] = useState(false);
   const [response, setResponse] = useState(false);
 
+
   return (
     <div className='wrapper'>
       <div className='top'>
         <img src={Logo} alt='Logo'/>
         <div className="tabs">
-          <ul>
-            <li  className="feat"onClick={()=> {setFeature(!feature);}}
+          <ul className={response ? "t" : "T-tabs"}>
+            <li  id= "feat" className="feat" onClick={()=> {setFeature(!feature);}}
             >Features</li>
             {feature && 
             <ul className="featB">
@@ -36,11 +37,12 @@ function Header() {
             <li>About</li>
           </ul>
         </div>
-      </div>
-        <div className="B-tabs">
+        <div className={response ? "B" : "B-tabs"}>
+
           <label>Login</label>
           <button>Register</button>
         </div>
+      </div>
         <img 
           className="bar" 
           src={response ? Close : Bar } 
@@ -48,8 +50,7 @@ function Header() {
           onClick={()=>{setResponse(!response)}}
           
         />
-        {response &&
-        <div className='resBar'>
+        {response &&<div className='resBar'>
               
         </div>}
     </div>
