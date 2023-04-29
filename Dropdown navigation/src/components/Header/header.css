@@ -143,6 +143,18 @@ li img{
         left: 10rem;
     }
 
+    #feat img{
+        position: fixed;
+        top: 3.3rem;
+        left: 16rem;
+    }
+
+    .Comp img{
+        position: fixed;
+        top: 5.1rem;
+        left: 16.5rem;
+    }
+
     .t li, .B li{
         justify-content: left;
     }
@@ -164,8 +176,8 @@ li img{
         width: 100%;
         font-size: 1.2rem;
         background-color: white;
-        border-radius: 0.3rem;
-        padding: 0.2rem 3rem;
+        border-radius: 0.8rem;
+        padding: 0.5rem 3rem;
     }
 
     .icons{
