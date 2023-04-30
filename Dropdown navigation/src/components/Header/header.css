@@ -187,10 +187,6 @@ li img{
     
     }
 
-    .active{
-       
-    }
-
     .bar{
         display: pointer;
         z-index: 5;
@@ -217,13 +213,18 @@ li img{
         height: 80%;
     }
 
+    .compB{
+        display: block;
+        position: fixed;
+        top: 2rem;
+    }
+
     .featB li, .compB li{
-        
+
+        width: fit-content;
         margin: 0rem;
         display: flex;
         justify-content: left;
         font-size: 1.2rem;
         padding: 0.5rem 1rem;
-        gap: 0.2rem;
-
 }

@@ -40,13 +40,13 @@ function Header() {
             <img className="icons"
             src={company ? UpArrow : DownArrow}>
             </img>
-            </li>
             {company && 
               <ul className="compB">
                 <li>History</li>
                 <li>Our Team</li>
                 <li>Blog</li>
               </ul>}
+            </li>
             <li>Career</li>
             <li>About</li>
           </ul>
