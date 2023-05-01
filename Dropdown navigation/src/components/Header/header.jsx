@@ -27,14 +27,15 @@ function Header() {
             <img className="icons"
             src={feature ? UpArrow : DownArrow} 
             alt='a drop down arrow'/>
+              {feature && 
+              <ul className="featB">
+                <li> <img src={Todo} alt='Logo'/>Todo List</li>
+                <li> <img src={Calendar} alt='Calender'/>Calander</li>
+                <li> <img src={Reminder} alt='Reminders'/>Reminder</li>
+                <li> <img src={Planning} alt='Planning'/>Planning</li>
+              </ul>}
+            
             </li>
-            {feature && 
-            <ul className="featB">
-              <li> <img src={Todo} alt='Logo'/>Todo List</li>
-              <li> <img src={Calendar} alt='Calender'/>Calander</li>
-              <li> <img src={Reminder} alt='Reminders'/>Reminder</li>
-              <li> <img src={Planning} alt='Planning'/>Planning</li>
-            </ul>}
             <li className="Comp" onClick={()=> {setCompany(!company);}}
             >Company 
             <img className="icons"

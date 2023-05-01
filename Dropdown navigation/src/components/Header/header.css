@@ -32,6 +32,11 @@ li {
     margin-left: 1rem;
     justify-content: space-around;
     font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+li:hover{
+    color: rgba(0, 0, 0, 1);
 }
 
 
@@ -237,12 +242,20 @@ li img{
     }
 
     .featB li, .compB li{
-
+        display: block;
         width: fit-content;
         margin: 0rem;
         display: flex;
         justify-content: left;
         font-size: 1.2rem;
         padding: 0.5rem 1rem;
-}
+    }
+
+    li {
+        color: rgba(0, 0, 0, 0.40);
+    }
+
+    li:hover {
+        color: rgba(0, 0, 0, 0.40);
+    }
 }
