@@ -14,7 +14,7 @@
 }
 
 .bodyW{
-    position: relative;
+    padding: 6rem 0 0 0;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -42,13 +42,12 @@
 }
 
 .bodyF{
-    position: absolute;
-    bottom: -9rem;
+    /* position: absolute; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: space-evenly;
-  
+    justify-content: space-between;
+    align-items: end;
+    padding: 9rem 0 0 0;
 }
 
 .bodyF img{
