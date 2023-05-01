@@ -1,0 +1,19 @@
+.wrapperB{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+    gap: 33%;
+}
+
+.wrapperB img{
+    flex: 1;
+    width: 50%
+}
+
+.bodyW{
+    flex: 1;
+    width: 50%;
+}
+
