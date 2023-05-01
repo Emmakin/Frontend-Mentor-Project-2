@@ -18,7 +18,7 @@ function Body() {
                 <p>Streamline processes, create tean rituals, and</p>
                 <p>watch productivity soar.</p>
             </div>
-            <button>Learn more</button>
+            <button><strong>Learn more</strong></button>
         </div>
     </div>
   )
