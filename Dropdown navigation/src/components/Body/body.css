@@ -42,7 +42,6 @@
 }
 
 .bodyF{
-    /* position: absolute; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,4 +52,53 @@
 .bodyF img{
     width: 5rem;
     height: 2rem;
+}
+
+
+@media (max-width:375px){
+
+    .wrapperB{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 0 0;
+        gap: 0.1rem;
+        
+
+    }
+
+    .wrapperB img{
+        width: 100%;
+    }
+
+    .bodyW{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+        padding: 4rem 0 0 0;
+    }
+
+    .bodyW h1{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+    }
+
+    .bodyF{
+        padding: 0 0 2rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+
+    .bodyF img{
+        width: 3rem;
+        height: 1.2rem;
+    }
 }

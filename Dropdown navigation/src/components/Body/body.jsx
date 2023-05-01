@@ -1,5 +1,6 @@
 import React from 'react'
 import BackP from "../images/image-hero-desktop.png"
+import BackP2 from "../images/image-hero-mobile.png"
 import "./body.css"
 import Databiz from "../images/client-databiz.svg"
 import Audio from "../images/client-audiophile.svg"
@@ -9,7 +10,12 @@ import Maker from "../images/client-maker.svg"
 function Body() {
   return (
     <div className='wrapperB'>
-        <div><img src={BackP}/></div>
+        <div>
+            <picture>
+                <source srcSet={BackP2} media="(max-width: 375px)"/>
+                <img src={BackP}  alt='image'/>
+            </picture>
+        </div>
         <div className='bodyW'>
             <div className='mainT'>
                 <h1>
