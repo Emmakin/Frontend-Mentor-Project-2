@@ -14,6 +14,7 @@
 }
 
 .bodyW{
+    position: relative;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,7 @@
     border-radius: 0.5rem;
     padding: 0.4rem;
     background-color: black;
+    color: white;
     font: bold
 }
 
@@ -39,3 +41,17 @@
     color: black;
 }
 
+.bodyF{
+    position: absolute;
+    bottom: -9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: space-evenly;
+  
+}
+
+.bodyF img{
+    width: 5rem;
+    height: 2rem;
+}

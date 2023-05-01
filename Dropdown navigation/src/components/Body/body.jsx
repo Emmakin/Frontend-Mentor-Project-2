@@ -1,6 +1,10 @@
 import React from 'react'
 import BackP from "../images/image-hero-desktop.png"
 import "./body.css"
+import Databiz from "../images/client-databiz.svg"
+import Audio from "../images/client-audiophile.svg"
+import Meet from "../images/client-meet.svg"
+import Maker from "../images/client-maker.svg"
 
 function Body() {
   return (
@@ -19,6 +23,12 @@ function Body() {
                 <p>watch productivity soar.</p>
             </div>
             <button><strong>Learn more</strong></button>
+            <div className='bodyF'>
+                <img src={Databiz}></img>
+                <img src={Audio}></img>
+                <img src={Meet}></img>
+                <img src={Maker}></img>
+            </div>
         </div>
     </div>
   )
