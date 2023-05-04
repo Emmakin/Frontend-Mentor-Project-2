@@ -127,7 +127,7 @@ li img{
     display: none;
 }
 
-@media (max-width: 735px){
+@media (max-width: 375px){
     .wrapper{
         position: relative;
         
