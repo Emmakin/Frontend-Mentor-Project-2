@@ -12,7 +12,7 @@ function Body() {
     <div className='wrapperB'>
         <div>
             <picture>
-                <source srcSet={BackP2} media="(max-width: 375px)"/>
+                <source srcSet={BackP2} media="(max-width: 735px)"/>
                 <img src={BackP}  alt='image'/>
             </picture>
         </div>
